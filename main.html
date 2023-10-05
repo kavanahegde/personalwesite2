@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavana Hegde</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">HOME</a></li>
+                <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">PORTFOLIO</a></li>
+                <li><a href="#" onclick="showSection('contact')">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hidden">
+        <h1>Developer, artist</h1>
+        <p>Interested in improving the development process for teams big and small.</p>
+        <div class="quote">
+            <blockquote>
+                "<em>I have no special talent. I am only passionately curious</em>"
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="about" class="hidden">
+        <h2>About Me</h2>
+        <div class="interest">
+            <h3>Gardening</h3>
+            <img src="gardening.jpg" alt="Gardening">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum dolor id, tempus nisi.</p>
+        </div>
+        <div class="interest">
+            <h3>Photography</h3>
+            <img src="photography.jpg" alt="Photography">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum dolor id, tempus nisi.</p>
+        </div>
+        <div class="interest">
+            <h3>Hiking</h3>
+            <img src="hiking.jpg" alt="Hiking">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum dolor id, tempus nisi.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="hidden">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="hiking.jpg" alt="Hiking">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum dolor id, tempus nisi.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="project2.jpg" alt="Project 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum dolor id, tempus nisi.</p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <img src="project3.jpg" alt="Project 3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum dolor id, tempus nisi.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

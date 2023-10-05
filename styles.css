@@ -1,0 +1,31 @@
+
+
+
+#portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Gap between grid items */
+}
+
+/* Proportional units for navigation links */
+nav ul li {
+    width: 25%; 
+}
+
+/* Dynamic styling with hover effects */
+nav ul li a:hover {
+    color: gold;
+}
+
+
+
+
+body {
+    background-color: rgb(69, 5, 69); /* Violet background color for the page */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+}
+
+
